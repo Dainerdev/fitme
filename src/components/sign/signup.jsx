@@ -1,7 +1,16 @@
 import React from 'react'
 import style from '../../styles/sign/signup.module.css'
+import { useNavigate } from 'react-router-dom'
 
 function SignUp() {
+
+  const navigate = useNavigate();
+
+  const cancel = (e) => {
+    e.preventDefault();
+    navigate('/');
+  };
+
   return (
     <div className={style.background}>
       <div className={style.container}>      
@@ -44,10 +53,10 @@ function SignUp() {
                 </div>
               </div>              
             </div>
-            <p className={style.log}>You're already logged? <a href="#">Log In</a></p>
+            <p className={style.log}>You're already logged? <a href="/signin">Log In</a></p>
             <div className={style.buttonGroup}>
               <button className={style.logInBtn} type="submit">Sign Up</button>
-              <button className={style.cancelBtn} type="submit">Cancel</button>
+              <button className={style.cancelBtn} onClick={cancel} type="submit">Cancel</button>
             </div>
             <p className={style.brand}>Fit<span>.Me</span></p>
           </form>  

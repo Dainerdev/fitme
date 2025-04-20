@@ -23,7 +23,7 @@ function SignIn() {
               <input className={style.field} type="text" placeholder="User" />
               <input className={style.field} type="password" placeholder="Password" />
             </div>
-            <p className={style.notLog}>You're not logged? <a href="">Sign Up</a></p>
+            <p className={style.notLog}>You're not logged? <a href="/signup">Sign Up</a></p>
             <div className={style.buttonGroup}>
               <button className={style.logInBtn} type="submit">Sign In</button>
               <button className={style.cancelBtn} onClick={cancel} type="submit">Cancel</button>
