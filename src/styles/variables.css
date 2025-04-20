@@ -1,0 +1,11 @@
+:root{
+    --header-background-color: #1a1a1a;
+    --text-color: #fff;
+    --accent-color: #f6d047;
+    --accent-color2: #3a3939;
+    --accent-color3: #dbba44de;
+
+    --button-background-color: #3a3939;
+    --form-background-color: #f5f5f5;
+    --form-border-color: #f6d047;
+}

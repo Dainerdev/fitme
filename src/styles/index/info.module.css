@@ -1,0 +1,52 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.contentImage {
+    position: relative;
+    display: inline-block;
+}
+
+.img {
+    display: block;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+    height: 750px;
+}
+
+.contentInfo {
+    font-size: 20px;
+    position: absolute;
+    top: 24vh;
+    left: 10vh;
+    height: 30vh;
+    width: 50vh;
+    color: var(--text-color);
+    backdrop-filter: blur(20px);    
+    border: 2px solid var(--accent-color);
+    border-radius: 24px;
+    align-items:center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contentInfo h1 {
+    margin: 10px 0;
+}
+
+.contentInfo p {
+    color: black;
+}
+
+.startBtn {
+    margin-top: 5vh;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid var(--accent-color3);
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+}
