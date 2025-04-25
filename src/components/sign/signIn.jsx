@@ -17,16 +17,16 @@ function SignIn() {
         <div className={style.content}>
           <form className={style.loginForm}>
             <div>              
-              <h1 className={style.info}> Log <span>In</span></h1>
+              <h1 className={style.info}> Iniciar <span>Sesión</span></h1>
             </div>
             <div className={style.inputs}>
-              <input className={style.field} type="text" placeholder="User" />
-              <input className={style.field} type="password" placeholder="Password" />
+              <input className={style.field} type="text" placeholder="Usuario" />
+              <input className={style.field} type="password" placeholder="Contraseña" />
             </div>
-            <p className={style.notLog}>You're not logged? <a href="/signup">Sign Up</a></p>
+            <p className={style.notLog}>No estás registrado? <a href="/signup">Regístrate!</a></p>
             <div className={style.buttonGroup}>
-              <button className={style.logInBtn} type="submit">Sign In</button>
-              <button className={style.cancelBtn} onClick={cancel} type="submit">Cancel</button>
+              <button className={style.logInBtn} type="submit">Iniciar Sesión</button>
+              <button className={style.cancelBtn} onClick={cancel} type="submit">Cancelar</button>
             </div>
             <p className={style.brand}>Fit<span>.Me</span></p>
           </form>  
