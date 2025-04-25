@@ -17,24 +17,28 @@ function SignUp() {
         <div className={style.content}>
           <form className={style.signupForm}>
             <div>              
-              <h1 className={style.info}> Sign <span>Up</span></h1>
+              <h1 className={style.info}> Regístrate <span>Ya</span></h1>
             </div>
             <div className={style.inputs}>
               <div className={style.section} id="section1">
-                <input className={style.field} type="text" placeholder="Names" />
-                <input className={style.field} type="text" placeholder="Last names" />
+                <input className={style.field} type="text" placeholder="Nombre(s)" />
+                <input className={style.field} type="text" placeholder="Apellido(s)" />
               </div>
               <div className={style.section} id="section2">
-                <input className={style.field} type="email" placeholder="Email" />
-                <input className={style.field} type="password" placeholder="Password" />              
+                <input className={style.field} type="email" placeholder="Correo electrónico" />
+                              
               </div>
               <div className={style.section} id="section3">
+                <input className={style.field} type="password" placeholder="Contraseña" />
+                <input className={style.field} type="password" placeholder="Confirmar contraseña" />
+              </div>
+              <div className={style.section} id="section4">
                 <div className={style.inputGroup}>
-                  <label htmlFor="birth">Birth Date</label>
-                  <input className={style.field} type="text" placeholder="Birth date" id='birth' />
+                  <label htmlFor="birth">Fecha de nacimiento</label>
+                  <input className={style.field} type="date" placeholder="Fecha de nacimiento" id="birth" />
                 </div>
                 <div className={style.inputGroup}>
-                  <label htmlFor="gender">Gender</label>
+                  <label htmlFor="gender">Género</label>
                   <select className={style.field} name="gender" id="gender">
                     <option value="select">Seleccione</option>
                     <option value="male">Masculino</option>
@@ -43,20 +47,20 @@ function SignUp() {
                 </div>
               </div>
               <div className={style.section} id="section4">
-                <input className={style.field} type="number" placeholder="Weight (Kg)" />
-                <input className={style.field} type="number" placeholder="Height (cm)" />                
+                <input className={style.field} type="number" placeholder="Peso (Kg)" />
+                <input className={style.field} type="number" placeholder="Altura (cm)" />                
               </div>
               <div className={style.section} id="section5">
                 <div className={style.inputGroup}>
-                  <label htmlFor="goal">Meta</label>
-                  <textarea className={style.field} name="goal" id="goal"></textarea>
+                  <label htmlFor="goal">Objetivo</label>
+                  <textarea className={style.field} name="goal" id="goal" placeholder='Describe tu objetivo.'></textarea>
                 </div>
               </div>              
             </div>
-            <p className={style.log}>You're already logged? <a href="/signin">Log In</a></p>
+            <p className={style.log}>Ya estás registrado? <a href="/signin">Inicia Sesión</a></p>
             <div className={style.buttonGroup}>
-              <button className={style.logInBtn} type="submit">Sign Up</button>
-              <button className={style.cancelBtn} onClick={cancel} type="submit">Cancel</button>
+              <button className={style.logInBtn} type="submit">Regístrate</button>
+              <button className={style.cancelBtn} onClick={cancel} type="submit">Cancelar</button>
             </div>
             <p className={style.brand}>Fit<span>.Me</span></p>
           </form>  
