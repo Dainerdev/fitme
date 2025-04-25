@@ -7,8 +7,8 @@ function Header() {
       <ul>
         <li><a href='#fitme' className={style.brand}>Fit<span>.Me</span></a></li>
         <div className={style.signButtons}>
-          <li><a href='/signin' className={style.signIn}>Sign In</a></li>
-          <li><a href='/signup' className={style.getStarted}>Get Started</a></li> 
+          <li><a href='/signin' className={style.signIn}>Iniciar Sesión</a></li>
+          <li><a href='/signup' className={style.getStarted}>Regístrate!</a></li> 
         </div>
       </ul>
     </nav>
