@@ -20,7 +20,7 @@ function SignIn() {
               <h1 className={style.info}> Iniciar <span>Sesión</span></h1>
             </div>
             <div className={style.inputs}>
-              <input className={style.field} type="text" placeholder="Usuario" />
+              <input className={style.field} type="email" placeholder="Correo electrónico" />
               <input className={style.field} type="password" placeholder="Contraseña" />
             </div>
             <p className={style.notLog}>No estás registrado? <a href="/signup">Regístrate!</a></p>
