@@ -72,6 +72,16 @@ function SignUp() {
               </div>
               <div className={style.section} id="section5">
                 <div className={style.inputGroup}>
+                  <label htmlFor="activity">Nivel de actividad:</label>
+                  <select className={style.field} name="activity" id="activity">
+                    <option value="select">Seleccione</option>
+                    <option value="sedentary">Sedentario</option>
+                    <option value="lightlyActive">Actividad Ligera </option>
+                    <option value="moderatelyActive">Actividad Moderada</option>
+                    <option value="veryActive">Actividad Intensa</option>
+                  </select>
+                </div>
+                <div className={style.inputGroup}>
                   <label htmlFor="goal">Objetivo:</label>
                   <select className={style.field} name="goal" id="goal">
                     <option value="select">Seleccione</option>
