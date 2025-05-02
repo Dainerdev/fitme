@@ -63,10 +63,6 @@
     margin: 0;
 }
 
-.inputGroup select{
-    color: #757575;
-}
-
 .inputGroup label {
     font-size: 16px;
     margin-bottom: 6px;
@@ -122,6 +118,7 @@ input[type="date"]{
 .cancelBtn:hover {
     box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
+    background-color: #3a3939;
 }
 
 .brand {
