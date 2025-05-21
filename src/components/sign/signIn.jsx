@@ -29,6 +29,9 @@ function SignIn() {
                   <input className={style.field} type="email" placeholder="Correo electrónico" />
                   <input className={style.field} type="password" placeholder="Contraseña" />
                 </div>
+                <div className={style.forgot}>
+                  <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
                 <p className={style.notLog}>No estás registrado? <a href="/signup">Regístrate!</a></p>
                 <div className={style.buttonGroup}>
                   <button className={style.logInBtn} onClick={home} type="submit">Iniciar Sesión</button>
