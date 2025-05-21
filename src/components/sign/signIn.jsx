@@ -17,11 +17,18 @@ function SignIn() {
     navigate('/home');
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+  }
+
+  
+
   return (
         <div className={style.background}>
           <div className={style.container}>      
             <div className={style.content}>
-              <form className={style.loginForm}>
+              <form className={style.loginForm} onSubmit={handleSubmit}>
                 <div>              
                   <h1 className={style.info}> Iniciar <span>Sesión</span></h1>
                 </div>
@@ -35,7 +42,7 @@ function SignIn() {
                 <p className={style.notLog}>No estás registrado? <a href="/signup">Regístrate!</a></p>
                 <div className={style.buttonGroup}>
                   <button className={style.logInBtn} onClick={home} type="submit">Iniciar Sesión</button>
-                  <button className={style.cancelBtn} onClick={cancel} type="submit">Cancelar</button>
+                  <button className={style.cancelBtn} onClick={cancel} type="button">Cancelar</button>
                 </div>
                 <p className={style.brand}>Fit<span>.Me</span></p>
               </form>  
