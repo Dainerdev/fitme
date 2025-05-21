@@ -1,7 +1,6 @@
 import style from '../../styles/sign/signIn.module.css'
 import { useNavigate } from 'react-router-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../home/home.jsx'
+import { useState } from 'react';
 
 function SignIn() {
 
@@ -17,12 +16,28 @@ function SignIn() {
     navigate('/home');
   };
 
+  // Handle form submission
+  // Prevent the default form submission behavior
   const handleSubmit = (e) => {
     e.preventDefault();
     
   }
 
-  
+  // Simulate a login process
+  const [form, setForm] = useState({
+    email: '',
+    password: ''
+  });
+
+  // Handle input changes
+  // Update the state with the input values
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({
+      ...form,
+      [name]: value
+    });
+  }
 
   return (
         <div className={style.background}>
@@ -33,8 +48,8 @@ function SignIn() {
                   <h1 className={style.info}> Iniciar <span>Sesión</span></h1>
                 </div>
                 <div className={style.inputs}>
-                  <input className={style.field} type="email" placeholder="Correo electrónico" />
-                  <input className={style.field} type="password" placeholder="Contraseña" />
+                  <input className={style.field} type="email" name='email' value={form.email} onChange={handleChange} placeholder="Correo electrónico" />
+                  <input className={style.field} type="password" name='password' value={form.password} onChange={handleChange} placeholder="Contraseña" />
                 </div>
                 <div className={style.forgot}>
                   <a href="#">¿Olvidaste la contraseña?</a>
