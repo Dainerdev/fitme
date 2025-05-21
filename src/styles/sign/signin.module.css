@@ -55,6 +55,11 @@
     font-size: 18px;
 }
 
+.forgot {
+    margin: 5px;
+    text-align: center;
+}
+
 .notLog {
     margin: 20px;
     text-align: center;
