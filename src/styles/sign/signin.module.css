@@ -45,7 +45,7 @@
 }
 
 .inputs {
-    margin: 20px 20px 0
+    margin: 20px 20px 0;
 }
 
 .field {
@@ -55,8 +55,15 @@
     font-size: 18px;
 }
 
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+}
+
 .forgot {
-    margin: 5px;
+    margin: 15px 0 0;
     text-align: center;
 }
 
