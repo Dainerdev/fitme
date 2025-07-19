@@ -3,12 +3,12 @@ import style from '../../styles/index/header.module.css'
 
 function Header() {
   return (    
-    <nav>
-      <ul>
-        <li><a href='#fitme' className={style.brand}>Fit<span>.Me</span></a></li>
+    <nav className={style.navigation}>
+      <ul className={style.bar}>
+        <li className={style.list}><a href='#fitme' className={`${style.brand} ${style.item}`}>Fit<span>.Me</span></a></li>
         <div className={style.signButtons}>
-          <li><a href='/signin' className={style.signIn}>Iniciar Sesión</a></li>
-          <li><a href='/signup' className={style.getStarted}>Regístrate!</a></li> 
+          <li className={style.list}><a href='/signin' className={`${style.signIn} ${style.item}`}>Iniciar Sesión</a></li>
+          <li className={style.list}><a href='/signup' className={`${style.getStarted} ${style.item}`}>Regístrate!</a></li>
         </div>
       </ul>
     </nav>
